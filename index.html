@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="esp">
+    <head>
+        <meta charset="UTF-8">
+            <title>Encriptador de Texto</title>
+            <link rel="stylesheet" href="reset.css">
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+	        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	        <link href="https://fonts.googleapis.com/	css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="img/Logo.png">
+           
+        </header>
+        <main>
+            
+            <section class="section">
+                <textarea id="insertar" type="text" class="input-text" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+                <h6><img src="img/exclamacion.svg"> Solo letras minusculas y sin acentos</h6>  
+                <div>
+                    <button id="boton1" type="button" onclick="btnencriptar()">Encriptar</button>
+                    <button id="boton2" type="button" onclick="btndesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="desencripar-2">
+                <textarea id="desifrar" type="text" class="input-text-area" cols="18" rows="8"></textarea>
+                <button id="copiar" onclick="copiar()">Copiar</button>
+                <div class="previsualizacion"> 
+                    <img id="imagenM" src="img/Muñeco.png">
+                    <p id="text-1">Ningun mensaje fue encontrado.</p>
+                    <p id="text-2">Inserte el texto que desea encriptar o desencriptar.</p>
+               </div>
+                
+            </section>
+        </main>
+       <!-- <section class="footer">
+        <footer >
+
+           
+        </footer>
+    </section>-->
+    <script src="main.js"></script>    
+</body>  
+</html>
